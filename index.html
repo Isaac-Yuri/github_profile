@@ -12,13 +12,31 @@
     <div class="box-search">
       <h1 id="title">GitHub Profile</h1>
       <div class="box-input">
-        <input placeholder="Digite o nome de usuário" type="search" name="search" id="search">
+        <input
+          placeholder="Digite o nome de usuário"
+          type="text"
+          name="search"
+          id="search"
+        />
         <button id="button-search">
-          <img src="./assets/search-icon.svg" alt="lupa">
+          <img src="./assets/search-icon.svg" alt="lupa" />
         </button>
       </div>
     </div>
-    <div class="box-profile"></div>
+
+    <div class="box-profile">
+      <div class="box-image">
+        <img id="user-avatar" src="" alt="foto do usuario" />
+      </div>
+      <h2 id="name-user"></h2>
+      <p id="bio"></p>
+      <div class="container-informations">
+        <div class="box-info"></div>
+        <div class="box-info"></div>
+        <div class="box-info"></div>
+      </div>
+    </div>
+
     <script src="./js/script.js"></script>
   </body>
 </html>
