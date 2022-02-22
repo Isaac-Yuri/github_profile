@@ -1,0 +1,33 @@
+body {
+  background: linear-gradient(
+    to right bottom,
+    rgb(56, 56, 56),
+    rgb(109, 109, 109)
+  );
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-search {
+}
+
+.box-search #title {
+}
+
+.box-search .box-input {
+}
+
+.box-search .box-input #search{
+}
+
+.box-search .box-input #button-search {
+}
+
+.box-search .box-input #button-search img {
+}
+
+.box-profile {
+}
