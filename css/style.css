@@ -14,6 +14,10 @@ body {
 
 /* box-search config */
 
+.box-profile {
+  max-width: 500px;
+}
+
 .box-search, .box-profile {
   display: flex;
   flex-direction: column;
@@ -24,7 +28,7 @@ body {
   background-color: gray;
   padding: 20px;
   border-radius: 10px;
-  margin: 20px 0;
+  margin: 20px 8px;
 }
 
 .box-search #title {
@@ -86,5 +90,9 @@ body {
 }
 
 .box-profile .container-informations .box-info {
+  text-align: center;
+}
+
+.box-profile #bio {
   text-align: center;
 }
