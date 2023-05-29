@@ -1,54 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GitHub Profile</title>
-    <link rel="shortcut icon" href="./assets/github.svg" type="image/svg" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <div class="box-search">
-      <h1 id="title">GitHub Profile</h1>
-      <div class="box-input">
-        <input
-          placeholder="Digite o nome de usuário"
-          type="text"
-          name="search"
-          id="search"
-        />
-        <button id="button-search">
-          <img src="./assets/search-icon.svg" alt="lupa" />
-        </button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Profile</title>
+  <link rel="shortcut icon" href="./assets/github.svg" type="image/svg" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+  <div class="box-search">
+    <h1 id="title">GitHub Profile</h1>
+    <div class="box-input">
+      <input placeholder="Digite o nome de usuário" type="text" name="search" id="search" />
+      <button type="submit" id="button-search">
+        <img src="./assets/search-icon.svg" alt="lupa" />
+      </button>
+    </div>
+  </div>
+
+  <div class="box-profile">
+    <div class="box-image">
+      <img id="user-avatar" />
+    </div>
+    <h2 id="name-user"></h2>
+
+    <p id="bio"></p>
+
+    <div class="container-informations">
+      <div class="box-info">
+        <h3 id="repo-number" class="info-number"></h3>
+        <span class="informations"></span>
+      </div>
+      <div class="box-info">
+        <h3 id="followers-number" class="info-number"></h3>
+        <span class="informations"></span>
+      </div>
+      <div class="box-info">
+        <h3 id="following-number" class="info-number"></h3>
+        <span class="informations"></span>
       </div>
     </div>
+  </div>
 
-    <div class="box-profile">
-      <div class="box-image">
-        <img id="user-avatar" />
-      </div>
-      <h2 id="name-user"></h2>
+  <footer>Feito por <a href="https://github.com/Isaac-Yuri">Isaac Yuri</a></footer>
 
-      <p id="bio"></p>
+  <script src="./js/script.js"></script>
+</body>
 
-      <div class="container-informations">
-        <div class="box-info">
-          <h3 id="repo-number" class="info-number"></h3>
-          <p class="informations"></p>
-        </div>
-        <div class="box-info">
-          <h3 id="followers-number" class="info-number"></h3>
-          <p class="informations"></p>
-        </div>
-        <div class="box-info">
-          <h3 id="following-number" class="info-number"></h3>
-          <p class="informations"></p>
-        </div>
-      </div>
-    </div>
-
-    <script src="./js/script.js"></script>
-  </body>
 </html>

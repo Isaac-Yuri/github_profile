@@ -7,7 +7,7 @@ async function buscarDadosDeUsuario(nomeDoUsuario) {
   return json;
 }
 
-// Aplication config
+// Application config
 const avatarImage = document.querySelector("img#user-avatar");
 const nameUser = document.querySelector("#name-user");
 const bio = document.querySelector("#bio");
@@ -23,15 +23,15 @@ buttonSearch.addEventListener("click", () => {
   if (nickName.length > 0) {
     inputSearch.value = "";
 
-    buscarDadosDeUsuario(nickName).then((dados) => {
-      if (dados.message === "Not Found") {
+    buscarDadosDeUsuario(nickName).then((data) => {
+      if (data.message === "Not Found") {
         alert("Usuário digitado não existe!");
       } else {
         const boxProfile = document.querySelector(".box-profile");
         boxProfile.style.display = "flex";
-        avatarImage.src = dados.avatar_url;
-        nameUser.innerHTML = dados.name;
-        bio.innerHTML = dados.bio;
+        avatarImage.src = data.avatar_url;
+        nameUser.innerHTML = data.name;
+        bio.innerHTML = data.bio;
 
         const fieldNames = ["Repositórios", "Seguidores", "Seguindo"];
         const fields = document.querySelectorAll(".informations");
@@ -40,12 +40,16 @@ buttonSearch.addEventListener("click", () => {
           fields[c].innerHTML = fieldNames[c];
         }
 
-        repoNumber.innerHTML = dados.public_repos;
-        followers.innerHTML = dados.followers;
-        following.innerHTML = dados.following;
+        repoNumber.innerHTML = data.public_repos;
+        followers.innerHTML = data.followers;
+        following.innerHTML = data.following;
       }
     });
   } else {
     alert("Digite o nome de usuário!");
   }
 });
+
+if (event.keyCode === 13) {
+  buttonSearch.click()
+}
