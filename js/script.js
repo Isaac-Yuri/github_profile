@@ -49,7 +49,3 @@ buttonSearch.addEventListener("click", () => {
     alert("Digite o nome de usuário!");
   }
 });
-
-if (event.keyCode === 13) {
-  buttonSearch.click()
-}
