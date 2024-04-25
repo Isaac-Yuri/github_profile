@@ -18,6 +18,12 @@ const following = document.querySelector("#following-number");
 const inputSearch = document.querySelector("input#search");
 const buttonSearch = document.querySelector("button#button-search");
 
+inputSearch.addEventListener("keyup", (event) => {
+  if (event.key === "Enter") {
+    buttonSearch.dispatchEvent(new MouseEvent("click"));
+  }
+});
+
 buttonSearch.addEventListener("click", () => {
   const nickName = inputSearch.value;
   if (nickName.length > 0) {
