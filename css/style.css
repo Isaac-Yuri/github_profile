@@ -7,7 +7,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 0px 10px;
   overflow-x: hidden;
 }
 
@@ -24,7 +24,7 @@ body {
   background-color: gray;
   padding: 20px;
   border-radius: 10px;
-  margin: 20px 8px;
+  margin: 15px 8px;
   box-sizing: border-box;
 }
 
@@ -91,12 +91,14 @@ body {
   text-align: center;
 }
 
-footer,
-footer>a {
-  color: #1eff3c;
-}
-
 footer {
+  width: 100%;
+  color: #1eff3c;
   padding: 10px;
   font-size: 1.1em;
+  text-align: center;
+}
+
+footer>a {
+  color: #1eff3c;
 }
